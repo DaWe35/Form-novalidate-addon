@@ -1,0 +1,26 @@
+{
+  "browser_action": {
+    "browser_style": true,
+    "default_title": "Add novalidate attribute to all forms",
+    "default_icon": {
+      "19": "icons/19.png",
+      "48": "icons/48.png"
+    }
+  },
+  "description": "Add novalidate attribute to all forms",
+  "manifest_version": 2,
+  "name": "Form novalidate",
+  "version": "1.0",
+  "homepage_url": "http://coolhd.hu",
+  "icons": {
+    "48": "icons/48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["run.js"]
+    }
+  ]
+
+}
